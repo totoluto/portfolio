@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+.App{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(17 17 17);
+  color: white
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  height: 5rem;
+  border-radius: 90px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 75px;
+}
+
+.NavLink {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+
+.NavLink::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 300ms;
+}
+
+.NavLink:hover::after {
+  transform: scale(1);
+}
+
+.NavLink.active::after {
+  transform: scale(1);
+}
+
+.app-content{
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.site{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  opacity: 1;
+  animation: fadeAndSlideUp 0.7s ease-out;
+}
+
+.home{
+  width: 40%;
+}
+
+.posts{
+  width: 60%;
+}
+
+@keyframes fadeAndSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitle{
+  font-size: 1.5rem;
+  color: #a8a8a8;
+}
+
+.corrupted{
+  font-size: calc(1rem + 2px);
+  color: transparent;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.text{
+  padding-top: 10px;
+  color: #707070;
+}
+
+#projects{
+  padding-top: 30px;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.projectList{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 250px;
+}
+
+.project-box{
+  width: calc(40vw / 3);
+  background-color: rgb(17 17 17);
+  height: calc(100% - 10px);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.project-bg:hover{
+  transform: scale(1.05);
+  transition: 200ms;
+}
+
+.project-bg{
+  padding: 0.25rem;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #707070;
+}
+
+.bg1{
+  background-image: linear-gradient(to right, #a5b4fc, #c084fc);
+}
+
+.bg2{
+  background-image: linear-gradient(to right, #f9a8d4, #818cf8);
+}
+
+.bg3{
+  background-image: linear-gradient(to right, #84aafc, #9333ea);
+}
+
+.project-title{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.project-desc{
+  color: #a8a8a8;
+}
+
+.read-more{
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.read-more:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hidden{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postListItem{
+  background-color: #171717FF;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.postListItem:hover{
+  transition: 200ms;
+  transform: scale(1.05);
+}
+
+.postListTitle{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.postListDesc{
+  padding-top: 5px;
+  color: #a8a8a8;
+}
+
+.decorationNone{
+  text-decoration: none;
 }
