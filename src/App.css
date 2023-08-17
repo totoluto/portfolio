@@ -196,3 +196,113 @@
 .decorationNone{
   text-decoration: none;
 }
+
+.about{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.education{
+  width: 50%;
+  padding: 0 5vw 0 5vw;
+  border-right: #707070 1px solid;
+}
+
+.contact{
+  width: 50%;
+  padding: 0 5vw 0 5vw;
+}
+
+.contactTitle{
+  font-size: 2rem;
+}
+
+.educationTitle{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.educationTimeline{
+  position: relative;
+  margin: 0 auto;
+}
+
+.educationTimelineScroll{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #a8a8a8 #111111;
+  scroll-behavior: smooth;
+  max-height: 55vh;
+}
+
+.educationTimeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #707070;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  margin-left: -3px;
+  border-radius: 20px;
+}
+
+.educationTimelineContainer {
+  position: relative;
+  background-color: inherit;
+  width: 90%;
+  padding-left: 70px;
+  padding-right: 25px;
+  padding-bottom: 3rem;
+}
+
+.educationTimelineContainer::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -20px;
+  background-color: #707070;
+  top: 16px;
+  border-radius: 50%;
+  z-index: 1;
+  left: 22px;
+}
+
+.educationTimelineTitle{
+  font-size: 1.5rem;
+}
+
+.educationTimelineSubtitle{
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.contactIcon{
+  color: white;
+}
+
+.contactContent{
+  margin-top: 2rem;
+}
+
+.contactLink{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.contactLink:hover{
+  color: lightgray;
+}
+
+.contactIcon{
+  padding-right: 1rem;
+}
+
