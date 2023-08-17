@@ -18,7 +18,7 @@ function About(){
                                         Professional Baccalaureate in Economics and Law
                                     </div>
                                     <div className={"educationTimelineSubtitle"}>
-                                        December 2023
+                                        August 2023
                                     </div>
                                 </div>
                             </div>
