@@ -19,7 +19,7 @@ function Home() {
 
                 <div id={"projects"}>Projects:</div>
                 <div className={"projectList"}>
-                    <Link to={'/posts/WordpressVirus'} className={"project-bg bg1"}>
+                    <Link to={'/posts/wordpressVirus'} className={"project-bg bg1"}>
                         <div className={"project-box"}>
                             <div className={"project-title"}>Wordpress virus analysis</div>
                             <div className={"project-desc"}>While reworking a website of one of my clients I stumbled upon a virus which was decrypted using the eval() function.</div>

@@ -8,7 +8,7 @@ function Posts() {
                 <PostListItem
                     name={'Wordpress virus analysis'}
                     description={'While reworking a website of one of my clients I stumbled upon a virus which was decrypted using the eval() function.'}
-                    link={'/posts/WordpressVirus'}
+                    link={'/posts/wordpressVirus'}
                 />
                 <PostListItem
                     name={'Discord virus?'}

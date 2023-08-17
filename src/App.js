@@ -4,6 +4,9 @@ import pfp from "./Images/pfp.jpg"
 import Home from "./Sites/Home";
 import Posts from "./Sites/Posts";
 import About from "./Sites/About";
+import WordPressVirus from "./Sites/Posts/WordPressVirus";
+import BertrandParadox from "./Sites/Posts/BertrandParadox";
+import DiscordVirus from "./Sites/Posts/DiscordVirus";
 
 function App() {
   return (
@@ -24,9 +27,9 @@ function App() {
             <Route path="/posts" element={<Posts/>}/>
             <Route path="/about" element={<About/>}/>
             {/*Posts, below*/}
-            <Route path="/posts/WordpressVirus" element={<About/>}/>
-            <Route path="'/posts/discordVirus'" element={<About/>}/>
-            <Route path="/posts/bertrandParadox" element={<About/>}/>
+            <Route path="/posts/wordpressVirus" element={<WordPressVirus/>}/>
+            <Route path="'/posts/discordVirus'" element={<DiscordVirus/>}/>
+            <Route path="/posts/bertrandParadox" element={<BertrandParadox/>}/>
           </Routes>
         </div>
       </BrowserRouter>
