@@ -15,9 +15,9 @@ function Home() {
             <div className="home">
                 <div className={"title"}>totoluto</div>
                 <div className={"subtitle"}>Software Developer</div>
-                <div className={"text"}>Hey there, I'm totoluto, and my real name is <span className={"corrupted"}>isPrivate</span>. I'm a {getAge()}-year-old software developer aiming to become an IT security specialist. Currently, I'm living and working in Switzerland, and I plan to start studying IT security in the spring of 2024.</div>
+                <div className={"text"}>Hey there, I'm totoluto, and my real name is <span className={"corrupted"}>Private</span>. I'm a {getAge()}-year-old software developer aiming to become an IT security specialist. Currently, I'm living and working in Switzerland, and I plan to start studying IT security in the spring of 2024.</div>
 
-                <div id={"projects"}>Projects:</div>
+                <div id={"projects"}>Posts and Projects:</div>
                 <div className={"projectList"}>
                     <Link to={'/posts/wordpressVirus'} className={"project-bg bg1"}>
                         <div className={"project-box"}>

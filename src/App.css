@@ -1,12 +1,13 @@
 .App{
   height: 100vh;
   width: 100vw;
+  font-size: 1vw;
   background-color: rgb(17 17 17);
   color: white
 }
 
 .logo{
-  height: 5rem;
+  height: 10vh;
   border-radius: 90px;
 }
 
@@ -14,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 75px;
+  padding: 3vh 5vw;
 }
 
 .NavLink {
@@ -49,7 +50,7 @@
 
 .app-content{
   display: flex;
-  padding-top: 50px;
+  padding-top: 10vh;
   justify-content: center;
 }
 
@@ -82,17 +83,17 @@
 }
 
 .title{
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: bold;
 }
 
 .subtitle{
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   color: #a8a8a8;
 }
 
 .corrupted{
-  font-size: calc(1rem + 2px);
+  font-size: calc(1vw + 2px);
   color: transparent;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
@@ -104,14 +105,14 @@
 
 #projects{
   padding-top: 30px;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   padding-bottom: 20px;
 }
 
 .projectList{
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  height: 30vh;
 }
 
 .project-box{
@@ -122,6 +123,7 @@
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
+  overflow: hidden;
 }
 
 .project-bg:hover{
@@ -130,8 +132,8 @@
 }
 
 .project-bg{
-  padding: 0.25rem;
-  margin-right: 10px;
+  padding: 0.25vw;
+  margin-right: 1vh;
   border-radius: 10px;
   text-decoration: none;
   color: #707070;
@@ -151,10 +153,11 @@
 
 .project-title{
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 .project-desc{
+  padding-top: 5px;
   color: #a8a8a8;
 }
 
@@ -185,7 +188,7 @@
 
 .postListTitle{
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 .postListDesc{
@@ -217,12 +220,12 @@
 }
 
 .contactTitle{
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .educationTitle{
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 2vw;
+  padding-bottom: 4vh;
 }
 
 .educationTimeline{
@@ -257,7 +260,7 @@
   width: 90%;
   padding-left: 70px;
   padding-right: 25px;
-  padding-bottom: 3rem;
+  padding-bottom: 8vh;
 }
 
 .educationTimelineContainer::after {
@@ -274,11 +277,11 @@
 }
 
 .educationTimelineTitle{
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .educationTimelineSubtitle{
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   color: #707070;
 }
 
@@ -287,14 +290,14 @@
 }
 
 .contactContent{
-  margin-top: 2rem;
+  margin-top: 4vh;
 }
 
 .contactLink{
   display: flex;
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   padding-bottom: 2rem;
 }
 
@@ -303,6 +306,6 @@
 }
 
 .contactIcon{
-  padding-right: 1rem;
+  padding-right: 20px;
 }
 
