@@ -1,13 +1,13 @@
-.App{
-  height: 100vh;
-  width: 100vw;
-  font-size: 1vw;
+.App {
+  height: 100dvh;
+  width: 100dvw;
+  font-size: 1.2rem;
   background-color: rgb(17 17 17);
   color: white
 }
 
 .logo{
-  height: 10vh;
+  height: 10dvh;
   border-radius: 90px;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3vh 5vw;
+  padding: 3dvh 5dvw;
 }
 
 .NavLink {
@@ -50,7 +50,7 @@
 
 .app-content{
   display: flex;
-  padding-top: 10vh;
+  padding-top: 10dvh;
   justify-content: center;
 }
 
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100dvw;
   opacity: 1;
   animation: fadeAndSlideUp 0.7s ease-out;
 }
@@ -83,17 +83,17 @@
 }
 
 .title{
-    font-size: 2vw;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
 .subtitle{
-  font-size: 1.5vw;
+  font-size: 1.6rem;
   color: #a8a8a8;
 }
 
 .corrupted{
-  font-size: calc(1vw + 2px);
+  font-size: calc(1.2rem + 2px);
   color: transparent;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
@@ -105,18 +105,18 @@
 
 #projects{
   padding-top: 30px;
-  font-size: 1.5vw;
+  font-size: 1.6rem;
   padding-bottom: 20px;
 }
 
 .projectList{
   display: flex;
   justify-content: space-between;
-  height: 30vh;
+  height: 30dvh;
 }
 
 .project-box{
-  width: calc(40vw / 3);
+  width: calc(40dvw / 3);
   background-color: rgb(17 17 17);
   height: calc(100% - 10px);
   border-radius: 10px;
@@ -132,8 +132,8 @@
 }
 
 .project-bg{
-  padding: 0.25vw;
-  margin-right: 1vh;
+  padding: 0.3rem;
+  margin-right: 30px;
   border-radius: 10px;
   text-decoration: none;
   color: #707070;
@@ -153,7 +153,7 @@
 
 .project-title{
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.3rem;
 }
 
 .project-desc{
@@ -188,7 +188,7 @@
 
 .postListTitle{
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.3rem;
 }
 
 .postListDesc{
@@ -210,22 +210,27 @@
 
 .education{
   width: 50%;
-  padding: 0 5vw 0 5vw;
+  padding: 0 5dvw 0 5dvw;
   border-right: #707070 1px solid;
 }
 
 .contact{
   width: 50%;
-  padding: 0 5vw 0 5vw;
+  padding: 0 5dvw 0 5dvw;
+}
+
+.contactIcon svg {
+  height: 2rem;
+  width: 2rem;
 }
 
 .contactTitle{
-  font-size: 2vw;
+  font-size: 2.2rem;
 }
 
 .educationTitle{
-  font-size: 2vw;
-  padding-bottom: 4vh;
+  font-size: 2.2rem;
+  padding-bottom: 4dvh;
 }
 
 .educationTimeline{
@@ -239,7 +244,7 @@
   scrollbar-width: thin;
   scrollbar-color: #a8a8a8 #111111;
   scroll-behavior: smooth;
-  max-height: 55vh;
+  max-height: 55dvh;
 }
 
 .educationTimeline::after {
@@ -260,7 +265,7 @@
   width: 90%;
   padding-left: 70px;
   padding-right: 25px;
-  padding-bottom: 8vh;
+  padding-bottom: 8dvh;
 }
 
 .educationTimelineContainer::after {
@@ -277,11 +282,11 @@
 }
 
 .educationTimelineTitle{
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 .educationTimelineSubtitle{
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   color: #707070;
 }
 
@@ -290,14 +295,14 @@
 }
 
 .contactContent{
-  margin-top: 4vh;
+  margin-top: 4dvh;
 }
 
 .contactLink{
   display: flex;
   text-decoration: none;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
 }
 
@@ -308,4 +313,137 @@
 .contactIcon{
   padding-right: 20px;
 }
+
+/* Phones (portrait and landscape) */
+@media only screen and (max-width: 480px) {
+
+  .App {
+    font-size: 1.1rem;
+    height: 100%;
+  }
+
+  .home {
+    width: 85%;
+  }
+
+  .posts {
+    width: 85%;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .app-content{
+    height: calc(100dvh - 16dvh - 14px);
+    overflow: scroll;
+    padding-top: 10px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .corrupted {
+    font-size: calc(1.1rem + 2px);
+  }
+
+  #projects{
+    font-size: 1.4rem;
+  }
+
+  .project-title{
+    font-size: 1.3rem;
+  }
+
+  .projectList {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project-bg {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .project-box {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .site {
+    align-items: flex-start;
+  }
+
+  .read-more {
+    padding-bottom: 40px;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .contactIconText {
+    display: none;
+  }
+
+  .contactIcon svg  {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .contactContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .educationTitle {
+    font-size: 1.8rem;
+  }
+
+  .education {
+    width: 90%;
+    padding: 0 5dvw 0 5dvw;
+    border-right: none;
+  }
+
+  .educationTimelineScroll {
+    overflow: hidden;
+    max-height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .educationTimelineContainer {
+    padding-left: 50px;
+    padding-right: 25px;
+    padding-bottom: 8dvh;
+    width: 80%;
+  }
+
+  .educationTimelineTitle {
+    font-size: 1.4rem;
+  }
+
+}
+
+/* Tablets (portrait mode) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Tablets (landscape mode) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
 
