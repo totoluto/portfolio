@@ -318,7 +318,7 @@
 @media only screen and (max-width: 480px) {
 
   .App {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     height: 100%;
   }
 
@@ -349,7 +349,7 @@
   }
 
   .corrupted {
-    font-size: calc(1.1rem + 2px);
+    font-size: calc(1.2rem + 2px);
   }
 
   #projects{
@@ -357,7 +357,7 @@
   }
 
   .project-title{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .projectList {
@@ -366,6 +366,7 @@
   }
 
   .project-bg {
+    height: 200px;
     margin-bottom: 20px;
     margin-right: 0;
   }
