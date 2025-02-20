@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(17, 17, 17);
+}
+
 .App {
   height: 100dvh;
   width: 100dvw;
@@ -314,8 +320,12 @@
   padding-right: 20px;
 }
 
-/* Phones (portrait and landscape) */
-@media only screen and (max-width: 480px) {
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 810px) {
 
   .App {
     font-size: 1.2rem;
@@ -435,16 +445,206 @@
     font-size: 1.4rem;
   }
 
-}
+  .burger {
+    display: block;
+  }
 
-/* Tablets (portrait mode) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: calc(3dvh + 10dvh);
+    height: calc(100% - 3dvh - 10dvh);
+    right: 0;
+    background-color: rgb(17, 17, 17);
+    width: 100dvw;
+    text-align: right;
+    padding-right: 20px;
+    z-index: 2;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(100%);
+  }
 
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .NavLink {
+    font-size: 1.8rem;
+    margin-right: 0;
+    margin-bottom: 20px;
+    transition: font-size 300ms, font-weight 300ms;
+  }
+
+  .NavLink.active::after {
+    transform: scale(0);
+  }
+
+  .NavLink:hover::after {
+    transform: scale(0);
+  }
+
+  .NavLink.active {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 
 /* Tablets (landscape mode) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 811px) and (max-width: 1080px) {
+  .App {
+    font-size: 1.2rem;
+    height: 100%;
+  }
 
+  .home {
+    width: 85%;
+  }
+
+  .posts {
+    width: 85%;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .corrupted {
+    font-size: calc(1.2rem + 2px);
+  }
+
+  #projects{
+    font-size: 1.4rem;
+  }
+
+  .project-title{
+    font-size: 1.4rem;
+  }
+
+  .projectList {
+    height: 100%;
+  }
+
+  .project-bg {
+    width: calc(100% / 3);
+  }
+
+  .project-box {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .site {
+    align-items: flex-start;
+  }
+
+  .read-more {
+    padding-bottom: 40px;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .contactIconText {
+    display: none;
+  }
+
+  .contactIcon svg  {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .contactContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .educationTitle {
+    font-size: 1.8rem;
+  }
+
+  .education {
+    width: 90%;
+    padding: 0 5dvw 0 5dvw;
+    border-right: none;
+  }
+
+  .educationTimelineScroll {
+    overflow: hidden;
+    max-height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .educationTimelineContainer {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 25px;
+    padding-bottom: 8dvh;
+    width: 80%;
+  }
+
+  .educationTimelineTitle {
+    font-size: 1.4rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: calc(3dvh + 10dvh);
+    height: calc(100% - 3dvh - 10dvh);
+    right: 0;
+    background-color: rgb(17, 17, 17);
+    width: 100dvw;
+    text-align: right;
+    padding-right: 20px;
+    z-index: 2;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .NavLink {
+    font-size: 1.8rem;
+    margin-right: 0;
+    margin-bottom: 20px;
+    transition: font-size 300ms, font-weight 300ms;
+  }
+
+  .NavLink.active::after {
+    transform: scale(0);
+  }
+
+  .NavLink:hover::after {
+    transform: scale(0);
+  }
+
+  .NavLink.active {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 
 

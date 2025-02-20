@@ -7,18 +7,27 @@ import About from "./Sites/About";
 import WordPressVirus from "./Sites/Posts/WordPressVirus";
 import BertrandParadox from "./Sites/Posts/BertrandParadox";
 import DiscordVirus from "./Sites/Posts/DiscordVirus";
+import {useState} from "react";
+import {FiMenu, FiX} from "react-icons/fi";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="App">
       <BrowserRouter>
         <header className={'header'}>
-          <Link to="/"><img className={'logo'} src={pfp} alt={"Profile totoluto"}/></Link>
-          <nav className={'nav'}>
-            <NavLink to="/" className="NavLink">HOME</NavLink>
-            <NavLink to="/posts" className="NavLink">POSTS</NavLink>
-            <NavLink to="/about" className="NavLink">ABOUT</NavLink>
-            <a href={"https://github.com/totoluto"} rel="noreferrer" target={"_blank"} className={"NavLink"}>GITHUB</a>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            <img className={'logo'} src={pfp} alt={"Profile totoluto"} />
+          </Link>
+          <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <FiX size={30} color="white" /> : <FiMenu size={30} color="white" />}
+          </div>
+          <nav className={menuOpen ? 'nav open' : 'nav'}>
+            <NavLink to="/" className="NavLink" onClick={() => setMenuOpen(false)}>HOME</NavLink>
+            <NavLink to="/posts" className="NavLink" onClick={() => setMenuOpen(false)}>POSTS</NavLink>
+            <NavLink to="/about" className="NavLink" onClick={() => setMenuOpen(false)}>ABOUT</NavLink>
+            <a href={"https://github.com/totoluto"} rel="noreferrer" target={"_blank"} className={"NavLink"} onClick={() => setMenuOpen(false)}>GITHUB</a>
           </nav>
         </header>
         <div className={"app-content"}>
@@ -28,7 +37,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             {/*Posts, below*/}
             <Route path="/posts/wordpressVirus" element={<WordPressVirus/>}/>
-            <Route path="'/posts/discordVirus'" element={<DiscordVirus/>}/>
+            <Route path="/posts/discordVirus" element={<DiscordVirus/>}/>
             <Route path="/posts/bertrandParadox" element={<BertrandParadox/>}/>
           </Routes>
         </div>
