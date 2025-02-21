@@ -8,7 +8,6 @@ import WordPressVirus from "./Sites/Posts/WordPressVirus";
 import BertrandParadox from "./Sites/Posts/BertrandParadox";
 import DiscordVirus from "./Sites/Posts/DiscordVirus";
 import {useState} from "react";
-import {FiMenu, FiX} from "react-icons/fi";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,8 +19,10 @@ function App() {
           <Link to="/" onClick={() => setMenuOpen(false)}>
             <img className={'logo'} src={pfp} alt={"Profile totoluto"} />
           </Link>
-          <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <FiX size={30} color="white" /> : <FiMenu size={30} color="white" />}
+          <div className={`burger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <nav className={menuOpen ? 'nav open' : 'nav'}>
             <NavLink to="/" className="NavLink" onClick={() => setMenuOpen(false)}>HOME</NavLink>
