@@ -33,8 +33,8 @@ function Home() {
                     </Link>
                     <Link to={'/posts/bertrandParadox'} className={"project-bg bg3"}>
                         <div className={"project-box"}>
-                            <div className={"project-title"}>Bertrand Paradox demonstrated using javafx</div>
-                            <div className={"project-desc"}>As part of my education I needed to implement a mathematical problem using javafx.</div>
+                            <div className={"project-title"}>Simulating Bertrand's Paradox with JavaFX</div>
+                            <div className={"project-desc"}>As part of my education I needed to implement a mathematical problem using JavaFX.</div>
                         </div>
                     </Link>
                 </div>

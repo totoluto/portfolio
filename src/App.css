@@ -1,6 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
+  max-height: 100dvh;
+  max-width: 100dvw;
+  overflow: hidden;
   background-color: rgb(17, 17, 17);
 }
 
@@ -64,6 +67,10 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: calc(100dvh - 36dvh);
+  scrollbar-width: thin;
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 100dvw;
   opacity: 1;
   animation: fadeAndSlideUp 0.7s ease-out;
@@ -75,6 +82,7 @@ html, body {
 
 .posts{
   width: 60%;
+  max-height: 100%;
 }
 
 @keyframes fadeAndSlideUp {
@@ -345,8 +353,6 @@ html, body {
   }
 
   .app-content{
-    height: calc(100dvh - 16dvh - 14px);
-    overflow: scroll;
     padding-top: 10px;
   }
 
@@ -389,6 +395,7 @@ html, body {
 
   .site {
     align-items: flex-start;
+    max-height: calc(100dvh - 24dvh);
   }
 
   .read-more {
@@ -497,6 +504,10 @@ html, body {
     height: 100%;
   }
 
+  .app-content{
+    padding-top: 10px;
+  }
+
   .home {
     width: 85%;
   }
@@ -545,6 +556,7 @@ html, body {
 
   .site {
     align-items: flex-start;
+    max-height: calc(100dvh - 30dvh);
   }
 
   .read-more {

@@ -16,7 +16,7 @@ function Posts() {
                     link={'/posts/discordVirus'}
                 />
                 <PostListItem
-                    name={'Bertrand Paradox demonstrated using javafx'}
+                    name={'Simulating Bertrand\'s Paradox with JavaFX'}
                     description={'As part of my education I needed to implement a mathematical problem using javafx.'}
                     link={'/posts/bertrandParadox'}
                 />
