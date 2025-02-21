@@ -244,7 +244,7 @@ function BertrandParadox() {
                         </p>
                         <br/>
                         <p>
-                            The application is available on <a href={"https://github.com/totoluto/bertrand-Paradox"} target={"_blank"}>GitHub</a>.
+                            The application is available on <a href={"https://github.com/totoluto/bertrand-Paradox"} rel="noreferrer" target={"_blank"}>GitHub</a>.
                             <br/>
                             It was developed using JavaFX and Java and can easily be launched in an IDE file as a Java Application.
                             <br/>

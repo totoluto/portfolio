@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,6 +7,8 @@ html, body {
   max-width: 100dvw;
   overflow: hidden;
   background-color: rgb(17, 17, 17);
+  font-family: 'Space Grotesk', serif;
+  font-weight: 300;
 }
 
 .App {
@@ -165,9 +169,14 @@ html, body {
   background-image: linear-gradient(to right, #84aafc, #9333ea);
 }
 
+b {
+  font-weight: 500;
+}
+
 .project-title{
   color: white;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .project-desc{
@@ -203,6 +212,7 @@ html, body {
 .postListTitle{
   color: white;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .postListDesc{
